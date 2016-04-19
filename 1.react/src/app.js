@@ -6,5 +6,3 @@ ReactDOM.render(
   <ResultsPage/>,
   document.getElementById('content')
 )
-
-console.log('asdasdasdqweweqljkadskljdsajkasd')
