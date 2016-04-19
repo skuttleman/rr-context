@@ -1,0 +1,30 @@
+pairs:
+  # <initials>: <Firstname> <Lastname>[; <email-id>]
+  et: Elaine Tai; etai
+  jf: Jerry Fallon; jfallon
+  jdk: Jean de Klerk; parmejean
+  cd: Corey Downing; corndog
+  dr: David Razner; drazner
+  kb: Kyle Brill; kbrill
+  md: Mark Douglass; mdouglass
+  vm: Vikram Malik; vmalik
+  np: Natty Pillai; npillai
+  se: Sarah Ehmann; sehmann
+  dj: Danny Joyce; djoyce
+  ks: Krupa Singavarapu; ksingavarapu
+  bs: Brandon Stokes; bstokes
+  pt: Praneeth Tangallapally; ptangallapally
+  bd: Brad Davidson; bdavidson
+  as: Alex Sartan; asartan
+  bds: Brad Stitt; bstitt
+  rs: Rajitha Schellenberg; rschellenberg
+  mky: Mage Khim-Young; mkhimyoung
+  gw: Gordon Weakliem; gweakliem
+  mp: Mike Poirier; mpoirier
+  mk: Mark Kollasch; mkollasch
+  ch: Chris Hutchinson; chutchinson
+  ic: Interview Candidate; icandidate
+  ja: James Albersheim; jalbersheim
+email:
+  prefix: pair
+  domain: pivotal.io
