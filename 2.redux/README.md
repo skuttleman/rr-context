@@ -15,3 +15,8 @@
 
 This is the same problem as `1.react` - this time, implement with state 
 being stored and passed by redux.
+
+## Running the app
+
+1. `gulp js`
+1. `open index.html`
