@@ -11,6 +11,11 @@
 1. `npm install`
 1. `npm install -g gulp`
 
+## Running tests
+
+1. `npm test`
+1. Navigate to `http://localhost:9876/debug.html`
+
 ## Problem
 
 Let's test the code we wrote in `2.redux`.

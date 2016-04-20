@@ -6,7 +6,7 @@ describe('ResultsPage', ()=> {
   it('renders', () => {
     const output = TestUtils.renderIntoDocument(
       <div id="test-element">
-        <ResultsPage />
+        <ResultsPage dispatch={function(){}} />
       </div>
     )
 

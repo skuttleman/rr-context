@@ -6,14 +6,16 @@ import {someAction} from '../actions/actions'
 const ResultsPage = React.createClass({
   render() {
     return (
-      <div id="resultsPage">Hello from ResultsPage.js!</div>
+      <div class="resultsPage">Hello from ResultsPage.js!</div>
     )
   },
 
   componentDidMount() {
     const {dispatch} = this.props
     dispatch(someAction())
-  },
+  }
 })
 
-export default connect((state) => state)(ResultsPage)
+//export default connect((state) => state)(ResultsPage)
+
+export default ResultsPage
