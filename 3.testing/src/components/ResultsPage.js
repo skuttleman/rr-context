@@ -16,6 +16,4 @@ const ResultsPage = React.createClass({
   }
 })
 
-//export default connect((state) => state)(ResultsPage)
-
-export default ResultsPage
+export default connect((state) => state)(ResultsPage)
