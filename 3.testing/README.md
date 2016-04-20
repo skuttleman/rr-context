@@ -13,5 +13,4 @@
 
 ## Problem
 
-This is the same problem as `1.react` - this time, implement with state 
-being stored and passed by redux.
+Let's test the code we wrote in `2.redux`.
