@@ -2,6 +2,7 @@
   "dependencies": {
     "franc": "^2.0.0",
     "gulp-watch": "^4.3.5",
+    "random-words": "0.0.1",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-redux": "^4.4.5",
