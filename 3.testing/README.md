@@ -26,3 +26,4 @@ to test.
 ## Resources
 
 - [Jasmine](http://jasmine.github.io/2.4/introduction.html)
+- [React TestUtils](https://facebook.github.io/react/docs/test-utils.html)
