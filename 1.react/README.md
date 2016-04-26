@@ -51,3 +51,22 @@ that looks like this:
 For this problem, build a page with a single input for the user to
 enter phrases, and a single table which displays the results that Lingua
 returns.
+
+## Resources
+
+- [React Tutorial](https://facebook.github.io/react/docs/tutorial.html)
+- [React Component API](https://facebook.github.io/react/docs/component-api.html)
+- [JavaScript Array on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+## Instructions and Hints
+
+Start out by adding an input field and a table with hard-coded data.
+
+Move the hard coded data out to a variable and render from that variable.
+
+Move the data to the Component state.
+
+Add an event handler to the input to handle text change events. Use this
+to drive updating the table with real results.
+
+Move the results table to its own component.
