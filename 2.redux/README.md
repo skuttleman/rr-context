@@ -20,3 +20,19 @@ being stored and passed by redux.
 
 1. `gulp js`
 1. `open index.html`
+
+## Resources
+
+- [Redux Documentation](http://redux.js.org/index.html)
+
+## Instructions and Hints
+
+Bring over your code from step 1.
+
+Move your text input to its own React Component.
+
+Text input handler will now need to `dispatch` an `action`.
+
+Introduce a `reducer` to call `lingua` and populate the `state`.
+
+Use the resulting `state` to populate the results table.
