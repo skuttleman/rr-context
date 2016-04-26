@@ -19,3 +19,10 @@
 ## Problem
 
 Let's test the code we wrote in `2.redux`.
+
+**NOTE** `Lingua` is now invoked with `lingua.lingua` to make it easier
+to test.
+
+## Resources
+
+- [Jasmine](http://jasmine.github.io/2.4/introduction.html)

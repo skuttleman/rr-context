@@ -6,7 +6,7 @@ const languageMap = iso639.reduce((object, language) => {
   return object
 }, {})
 
-export default function lingua(phrase) {
+function lingua(phrase) {
   const francResults = franc.all(phrase)
 
   return francResults.map(result => {
@@ -15,4 +15,8 @@ export default function lingua(phrase) {
       likelihood: result[1]
     }
   })
+}
+
+export default {
+  lingua
 }
