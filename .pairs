@@ -25,6 +25,7 @@ pairs:
   ch: Chris Hutchinson; chutchinson
   ic: Interview Candidate; icandidate
   ja: James Albersheim; jalbersheim
+  ba: Ben Allred; benjamin.allred
 email:
   prefix: pair
   domain: pivotal.io
