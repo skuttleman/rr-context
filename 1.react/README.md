@@ -3,6 +3,7 @@
 ## Installation
 
 1. `echo 'export NODE_TLS_REJECT_UNAUTHORIZED=0' >> ~/.bash_profile && source ~/.bash_profile`
+
 1. __OFF__ the VPN
 1. `brew update && brew install node`
     If node is already installed, you should
@@ -13,9 +14,9 @@
      sudo rm -rf /usr/local/lib/node_modules
      brew install node
      ```
-1. Copy `client/.npmrc` to your home directory `cp client/.npmrc ~/`
 1. `git clone git@gitlab.global.dish.com:pivotal-ofm/react-redux-context.git ~/workspace/react-redux-context`
 1. `cd ~/workspace/react-redux-context`
+1. Copy `1.react/.npmrc` to your home directory `cp client/.npmrc ~/`
 1. `npm install`
 1. `npm install -g gulp`
     1. Note: is npm taking forever? Probably timeout. Try `npm install -g gulp --fetch-retry-mintimeout=100 --fetch-retry-maxtimeout=10000 --fetch-retry-factor=2`
