@@ -2,18 +2,24 @@ import rootReducer from '../../src/reducers/rootReducer'
 import {SOME_ACTION, SOME_OTHER_ACTION} from '../../src/actions/actions'
 
 describe('.rootReducer', () => {
-  it('flips boolean', () => {
-    expect(
-      rootReducer({'someSpecializedReducer': true}, {type: SOME_ACTION}))
-      .toEqual({'someSpecializedReducer': false})
-    expect(
-      rootReducer({'someSpecializedReducer': false}, {type: SOME_ACTION}))
-      .toEqual({'someSpecializedReducer': true})
-  })
+  describe('.someSpecializedReducer', () => {
+    it('has a default state of false', () => {
+      const state = rootReducer(undefined, {type: 'ignored'})
 
-  it('ignores unknown actions', () => {
-    expect(
-      rootReducer({'someSpecializedReducer': false}, {type: SOME_OTHER_ACTION}))
-      .toEqual({'someSpecializedReducer': false})
+      expect(state.someSpecializedReducer).toEqual(false)
+    })
+
+    it('flips boolean', () => {
+      let state = rootReducer({'someSpecializedReducer': true}, {type: SOME_ACTION})
+      expect(state.someSpecializedReducer).toEqual(false)
+
+      state = rootReducer({'someSpecializedReducer': false}, {type: SOME_ACTION})
+      expect(state.someSpecializedReducer).toEqual(true)
+    })
+
+    it('ignores unknown actions', () => {
+      const state = rootReducer({'someSpecializedReducer': true}, {type: SOME_OTHER_ACTION})
+      expect(state.someSpecializedReducer).toEqual(true)
+    })
   })
 })
