@@ -1,5 +1,5 @@
 import rootReducer from '../../src/reducers/rootReducer'
-import {SOME_ACTION, SOME_OTHER_ACTION} from '../../src/actions/actions'
+import {SOME_ACTION} from '../../src/actions/actions'
 
 describe('.rootReducer', () => {
   describe('.someSpecializedReducer', () => {
@@ -18,7 +18,7 @@ describe('.rootReducer', () => {
     })
 
     it('ignores unknown actions', () => {
-      const state = rootReducer({'someSpecializedReducer': true}, {type: SOME_OTHER_ACTION})
+      const state = rootReducer({'someSpecializedReducer': true}, {type: 'ignored'})
       expect(state.someSpecializedReducer).toEqual(true)
     })
   })
