@@ -31,6 +31,9 @@ Let's test the code we wrote in `2.redux`.
 **NOTE** `Lingua` is now invoked with `lingua.lingua` to make it easier
 to test.
 
+**HINT** You can override methods on `fakeStore` in the `ResultsPageSpec` to spy
+on `dispatch` as well as provide state to the component.
+
 ## Resources
 
 - [Jasmine](http://jasmine.github.io/2.4/introduction.html)
