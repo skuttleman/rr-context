@@ -6,7 +6,7 @@ import {someAction} from '../actions/actions'
 const ResultsPage = React.createClass({
   render() {
     return (
-      <div class="resultsPage">Hello from ResultsPage.js!</div>
+      <div className="resultsPage">Hello from ResultsPage.js!</div>
     )
   },
 

@@ -19,12 +19,24 @@ const fakeStore = {
 describe('ResultsPage', ()=> {
   it('renders', () => {
     const output = TestUtils.renderIntoDocument(
-      <div id="test-element">
-        <ResultsPage store={fakeStore} dispatch={function(){}}/>
+      <div>
+        <ResultsPage store={fakeStore}/>
       </div>
     )
 
-    const resultsPage = output.getElementsByClassName('resultsPage')
-    expect(resultsPage).not.toBeUndefined()
+    const resultsPage = output.getElementsByClassName('resultsPage')[0]
+    expect(resultsPage).toBeDefined()
+    expect(resultsPage.innerHTML).toContain('Hello from ResultsPage.js!')
+  })
+
+  it('dispatches someAction on mount', () => {
+    spyOn(fakeStore, 'dispatch')
+    const output = TestUtils.renderIntoDocument(
+      <div>
+        <ResultsPage store={fakeStore}/>
+      </div>
+    )
+
+    expect(fakeStore.dispatch).toHaveBeenCalledWith({type: 'SOME_ACTION'})
   })
 })
