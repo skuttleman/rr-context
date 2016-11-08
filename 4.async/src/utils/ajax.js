@@ -1,5 +1,4 @@
 import { getLanguages, getLikelihood } from '../lib/lingua'
-import Promise from 'promise'
 
 const fakeHttp = response => {
   return new Promise(resolve => {

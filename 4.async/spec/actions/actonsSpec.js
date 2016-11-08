@@ -5,7 +5,6 @@ import {
   getLanguages, getLikelihood
 } from '../../src/actions/actions'
 import ajax from '../../src/utils/ajax'
-import Promise from 'promise'
 
 describe('actions', () => {
   describe('getLanguages', () => {

@@ -19,12 +19,8 @@ describe('App', ()=> {
 
   it('renders', () => {
     const {output} = renderApp()
-    expect(output.findRenderedDOMComponentWithClass('app')).toBeDefined()
+    const app = TestUtils.scryRenderedDOMComponentsWithClass(output, 'app')
 
-    // expect(app).toBeDefined()
-  })
-
-  it('dispatches getLanguages on submit', () => {
-
+    expect(app).toBeDefined()
   })
 })
