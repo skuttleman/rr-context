@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {getLanguages, getLikelihood} from '../actions/actions'
+import actions from '../actions/actions'
 
 export class App extends Component {
   render() {
@@ -29,16 +29,15 @@ export class App extends Component {
   }
 
   clickLanguage(language) {
-    console.log('click')
-    this.props.dispatch(getLikelihood(this.state.phrase, language)).then(() => console.log(this.props)).catch(console.error)
+    this.props.dispatch(actions.getLikelihood(this.state.phrase, language))
   }
 
   submit(event) {
     event.preventDefault()
     const phrase = event.target.phrase.value
-    console.log(phrase)
+    // console.log(phrase)
     this.setState({ phrase })
-    this.props.dispatch(getLanguages(phrase)).catch(console.error)
+    this.props.dispatch(actions.getLanguages(phrase))
   }
 }
 
