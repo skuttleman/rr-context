@@ -18,26 +18,13 @@ export class App extends Component {
   }
 
   mapLanguages(languages) {
-    return languages.map((language, key) => {
-      return (
-        <li key={key} onClick={() => this.clickLanguage(language)}>
-          <span>{language}: </span>
-          <span>{this.props.likelihood[language]}</span>
-        </li>
-      )
-    })
-  }
-
-  clickLanguage(language) {
-    this.props.dispatch(actions.getLikelihood(this.state.phrase, language))
+    return languages.map((language, key) => <li key={key}>{language}</li>)
   }
 
   submit(event) {
     event.preventDefault()
     const phrase = event.target.phrase.value
-    // console.log(phrase)
-    this.setState({ phrase })
-    this.props.dispatch(actions.getLanguages(phrase))
+    
   }
 }
 
